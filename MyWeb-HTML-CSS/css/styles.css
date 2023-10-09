@@ -151,6 +151,7 @@ nav img{
 
     .entidad {
         padding: 0;
+        font-size: 0px;
     }
 
     .nav_menu {
@@ -238,6 +239,11 @@ header {
     margin-bottom: 60px;
     text-align: center;
     color: #4651FE;
+}
+
+.sectionid {
+    display: flex;
+    margin-bottom: 110px;
 }
 
 /* NOSOTROS */
