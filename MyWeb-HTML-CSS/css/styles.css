@@ -166,7 +166,7 @@ nav img{
 /* HEADER */
 header {
     width: 100%;
-    height: 660px;  
+    height: 90vh;  
     background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.458), hsla(0, 0%, 0%, 0.6)), url(../img/Home-img.png);  
     background: linear-gradient(to right, hsla(0, 0%, 0%, 0.458), hsla(0, 0%, 0%, 0.6)), url(../img/Home-img.png); 
     background-size: cover;
@@ -206,7 +206,6 @@ header {
     text-decoration: none;
     background: linear-gradient(to right, #4651FE, #4787ff); 
     border-radius: 50px;
-    font-weight: 600;
     width: 40%;
     height: 40px;
 }
@@ -255,13 +254,13 @@ header {
 }
 
 .sobre-nosotros img {
-    width: 35%;
+    width: 30rem;
     border-radius: 15px;
     margin-right: 100px;
 }
 
 .sobre-nosotros-textos {
-    width: 34%;
+    width: 28rem;
 }
 
 .sobre-nosotros-textos h3 {
@@ -283,9 +282,8 @@ header {
     box-shadow: 0 0 30px 0 #0000003e;
     text-decoration: none;
     border-radius: 50px;
-    font-weight: 600;
-    width: 30%;
-    height: 40px;
+    width: 10rem;
+    height: 2.5rem;
 }
 
 .sobre-nosotros-textos a:hover {
@@ -299,13 +297,33 @@ header {
     }
 
     .sobre-nosotros img {
-        width: 70%;
+        width: 30rem;
         margin-right: 0;
         margin-top: 50px;
     }
     
     .sobre-nosotros-textos {
-        width: 70%;
+        width: 30rem;
+    }
+
+    .sobre-nosotros-textos a {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .sobre-nosotros {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-nosotros img {
+        width: 20rem;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    
+    .sobre-nosotros-textos {
+        width: 20rem;
     }
 
     .sobre-nosotros-textos a {
@@ -320,7 +338,8 @@ header {
 
 .servicios-x {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .tarjetas {
@@ -328,7 +347,7 @@ header {
     background-color: #ffffff;
     box-shadow: 0 0 30px 0 #00000022;
     border-radius: 20px;
-    width: 30%;
+    width: 20rem;
     height: 400px;
     align-items: center;
     justify-content: center;
@@ -363,17 +382,17 @@ header {
 .servicios-v {
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;  
+    gap: 6rem; 
 }
 
 .servicios-v img {
-    width: 40%;
-    margin-left: 100px;
+    width: 28rem;
     border-radius: 20px;
 }
 
 .servicios-textos {
-    width: 30%;
+    width: 30rem;
 }
 
 .servicios-textos h3 {
@@ -395,7 +414,7 @@ header {
     }
 
     .tarjetas {
-        width: 80%;
+        width: 20rem;
         margin-bottom: 50px;
     }
 
@@ -405,16 +424,29 @@ header {
 
     .servicios-v {
         flex-direction: column;
+        gap: 1rem;
     }
 
     .servicios-v img {
         margin-top: 30px;
         margin-left: 0;
-        width: 70%;
+        width: 30rem;
     }
 
     .servicios-textos {
-        width: 70%;
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .servicios-v img {
+        margin-top: 30px;
+        margin-left: 0;
+        width: 20rem;
+    }
+
+    .servicios-textos {
+        width: 20rem;
     }
 }
 
@@ -425,7 +457,7 @@ header {
 }
 
 .form-m {
-    width: 60%;
+    width: 50rem;
 }
 
 form {
@@ -433,7 +465,7 @@ form {
     background-color: #ffffff;
     box-shadow: 0 0 30px 0 #00000022;
     border-radius: 20px;
-    padding: 3em 3em;
+    padding: 3em;
 }
 
 .form-input, .form-boton {
@@ -467,15 +499,16 @@ form {
 }
 
 .form-boton {
+    display: grid;
+    place-items: center;
     background: linear-gradient(to right, #4651FE, #4787ff); 
     box-shadow: 0 0 30px 0 #0000003e;
     color: #ffffff;
-    font-weight: 600;
     outline: none;
     border: none;
     border-radius: 50px;
-    height: 40px;
-    width: 20%;
+    height: 2.5rem;
+    width: 10rem;
 }
 
 .form-boton:hover {
